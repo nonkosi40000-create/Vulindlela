@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/slate_800"
+    app:cardCornerRadius="16dp"
+    app:strokeColor="@color/slate_900"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_opp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/chip_shield"
+                android:text="Job Title"
+                android:textColor="@color/brand_white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_shield"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentEnd="true"
+                android:text="Shield"
+                android:textColor="@color/brand_white"
+                android:textSize="10sp"
+                app:chipBackgroundColor="@color/brand_green"
+                app:chipMinHeight="24dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_opp_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Location"
+            android:textColor="@color/white_transparent"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_opp_stipend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="R4,500 / month"
+                android:textColor="@color/brand_green"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_opp_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learnership"
+                android:textColor="@color/white_transparent"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="@color/slate_900" />
+
+        <Button
+            android:id="@+id/btn_view_details"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="VIEW DETAILS"
+            android:textColor="@color/brand_green"
+            app:strokeColor="@color/brand_green" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

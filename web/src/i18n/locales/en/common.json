@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Home",
+    "jobs": "Opportunities",
+    "guide": "AI Guide",
+    "shield": "Shield",
+    "profile": "Profile"
+  },
+  "dashboard": {
+    "welcome": "Hello, {{name}}",
+    "found_count": "Found {{count}} opportunities for you today.",
+    "recommended": "Recommended for you",
+    "see_all": "See all",
+    "bridge_title": "Close the gap",
+    "search_placeholder": "Search skills or towns..."
+  },
+  "opp": {
+    "stipend": "Stipend",
+    "taxi_fare": "Taxi Fare",
+    "high_transport": "High transport cost detected",
+    "verified": "Verified",
+    "vouched": "Vouched",
+    "unverified": "Unverified",
+    "apply": "Apply Now",
+    "applied": "Applied",
+    "fit_score": "Opportunity Fit Score",
+    "why_match": "Why this matches you",
+    "near_miss": "Near-Miss Bridge",
+    "flag_suspicious": "Flag as Suspicious"
+  },
+  "popia": {
+    "title": "Your Privacy, Your Rights",
+    "intro": "Vulindlela is committed to protecting your personal information. We follow the Protection of Personal Information Act (POPIA).",
+    "who_we_are": {
+      "title": "1. Who we are",
+      "content": "Vulindlela is the Responsible Party. Our Information Officer can be reached at privacy@vulindlela.org.za."
+    },
+    "what_we_collect": {
+      "title": "2. What we collect",
+      "content": "We only collect what we need: your name, mobile number, town, skills, and language preference. We never ask for ID numbers or bank details."
+    },
+    "why_we_collect": {
+      "title": "3. Why we collect it",
+      "content": "To match you with opportunities, verify employers, and keep you safe from scams."
+    },
+    "who_sees_it": {
+      "title": "4. Who sees your data",
+      "content": "Employers only see what you choose to share. We never sell your data."
+    },
+    "protection": {
+      "title": "5. How we protect it",
+      "content": "Your data is encrypted and stored securely."
+    },
+    "rights": {
+      "title": "6. Your Rights",
+      "content": "You can see, change, or delete your data at any time. You can also complain to the Information Regulator."
+    },
+    "under_18": {
+      "title": "7. If you are under 18",
+      "content": "Users aged 15–17 need a parent or guardian's permission via OTP."
+    },
+    "camera": {
+      "title": "8. Camera and Gestures",
+      "content": "If you use hand-gestures, video is processed on your device only and never saved."
+    },
+    "consent_processing": "I agree to Vulindlela processing my information to run my account. (Required)",
+    "consent_employer": "I agree to share my profile with verified employers. (Optional)",
+    "consent_alerts": "I agree to receive opportunity alerts. (Optional)",
+    "accept_button": "I Accept",
+    "read_aloud": "Read Aloud"
+  },
+  "shield": {
+    "title": "Vulindlela Shield",
+    "scam_detector": "Scam Detector",
+    "detector_desc": "Paste a job listing or message below to check for red flags.",
+    "check_button": "Check Listing",
+    "analyzing": "Analyzing...",
+    "risk_safe": "Safe",
+    "risk_warning": "Warning",
+    "risk_danger": "Danger"
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "personalize": "Personalize your experience",
+    "question": "Do you need the app to work differently for you?",
+    "standard": "Standard (no disability)",
+    "blind": "I am blind / very low vision",
+    "deaf": "I am deaf / hard of hearing",
+    "low_vision": "I have low vision",
+    "motor": "I have a motor disability",
+    "cognitive": "I have a cognitive disability",
+    "read_highlighter": "Reading Highlighter",
+    "gesture_nav": "Hand Gesture Navigation",
+    "sasl": "SASL Interpreter"
+  }
+}

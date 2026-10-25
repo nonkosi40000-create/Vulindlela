@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_900"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_nav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="VULINDLELA NAVIGATOR"
+        android:textColor="@color/sunrise_gold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_nav_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Buttons to each Activity -->
+            <Button android:id="@+id/btn_to_splash" android:layout_width="match_parent" android:layout_height="60dp" android:text="1. Splash Screen" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_lang" android:layout_width="match_parent" android:layout_height="60dp" android:text="2. Language Picker" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_popia" android:layout_width="match_parent" android:layout_height="60dp" android:text="3. POPIA Consent" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_login" android:layout_width="match_parent" android:layout_height="60dp" android:text="4. Login / OTP" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_access" android:layout_width="match_parent" android:layout_height="60dp" android:text="5. Accessibility Picker" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_dash" android:layout_width="match_parent" android:layout_height="60dp" android:text="6. Home Dashboard" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_profile" android:layout_width="match_parent" android:layout_height="60dp" android:text="7. User Profile" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_scam" android:layout_width="match_parent" android:layout_height="60dp" android:text="8. Shield Scam Detector" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_guide" android:layout_width="match_parent" android:layout_height="60dp" android:text="9. Vula Guide AI" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+            <Button android:id="@+id/btn_to_employer" android:layout_width="match_parent" android:layout_height="60dp" android:text="10. Employer Portal" android:layout_marginBottom="12dp" app:cornerRadius="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

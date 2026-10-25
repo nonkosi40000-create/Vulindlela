@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "850492545674",
+    "project_id": "vulindela-d35ae",
+    "storage_bucket": "vulindela-d35ae.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850492545674:android:84aba2258a0063bc8eeb73",
+        "android_client_info": {
+          "package_name": "com.example.vulindlela"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDziYMjnzFqja-Gs_tn7nysMJzFH5wy4aI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Ikhaya",
+    "jobs": "Amathuba",
+    "guide": "Isikhokelo se-AI",
+    "shield": "Ikhaka",
+    "profile": "Iprofayile"
+  },
+  "dashboard": {
+    "welcome": "Molo, {{name}}",
+    "found_count": "Sifumene amathuba ayi-{{count}} namhlanje.",
+    "recommended": "Okucetyiswe wena",
+    "see_all": "Bona konke",
+    "bridge_title": "Vala isikhewu",
+    "search_placeholder": "Khangela izakhono okanye iidolophu..."
+  },
+  "opp": {
+    "stipend": "Isibonelelo",
+    "taxi_fare": "Imali yeteksi",
+    "high_transport": "Kufunyenwe iindleko zokuhamba eziphezulu",
+    "verified": "Ingqinwe",
+    "vouched": "Ivunyelwe",
+    "unverified": "Ayingqinwanga",
+    "apply": "Faka isicelo ngoku",
+    "applied": "Ufake isicelo",
+    "fit_score": "Amanqaku okufaneleka",
+    "why_match": "Kutheni le nto ikufaneleyo",
+    "near_miss": "Ibhulorho ekufutshane",
+    "flag_suspicious": "Bika njengokurhanelwayo"
+  },
+  "popia": {
+    "title": "Imfihlo Yakho, Amalungelo Akho",
+    "intro": "IVulindlela izibophelele ekukhuseleni ulwazi lwakho. Silandela uMthetho woKhuseleko loLwazi loMntu (POPIA).",
+    "who_we_are": {
+      "title": "1. Singobani",
+      "content": "IVulindlela liQumhu elineXanduva. iGosa lethu loLwazi lingafumaneka ku-privacy@vulindlela.org.za."
+    },
+    "what_we_collect": {
+      "title": "2. Into esiyiqokelelayo",
+      "content": "Siqokelela kuphela oko sikudingayo: igama lakho, inombolo yemfonomfono, ilokishi/idolophu, izakhono, nolwimi olukhethayo. Asikubuzi ngenombolo ye-ID okanye iinkcukacha zebhanki."
+    },
+    "why_we_collect": {
+      "title": "3. Kutheni siyiqokelela",
+      "content": "Ukukudibanisa namathuba, ukuqinisekisa abaqeshi, nokukugcina ukhuselekile kubuqhophololo (scams)."
+    },
+    "who_sees_it": {
+      "title": "4. Ngubani obona ulwazi lwakho",
+      "content": "Abaqeshi babona kuphela oko ukhetha ukwabelana nabo. Asinakuze sithengise ulwazi lwakho."
+    },
+    "protection": {
+      "title": "5. Silukhusela njani",
+      "content": "Ulwazi lwakho lufihliwe (encrypted) kwaye lugcinwe ngokukhuselekileyo."
+    },
+    "rights": {
+      "title": "6. Amalungelo Akho",
+      "content": "Ungalubona, ulutshintshe, okanye ulucime ulwazi lwakho nangaliphi na ixesha. Ungakwazi nokukhalaza kwi-Information Regulator."
+    },
+    "under_18": {
+      "title": "7. Ukuba ungaphantsi kweminyaka eli-18",
+      "content": "Abasebenzisi abaneminyaka eli-15–17 badinga imvume yomzali okanye umgcini nge-OTP."
+    },
+    "camera": {
+      "title": "8. Ikhamera noSetyenziso lweZandla",
+      "content": "Ukuba usebenzisa izandla (gestures), ividiyo icutshungulwa kwisixhobo sakho kuphela kwaye ayinakuze igcinwe."
+    },
+    "consent_processing": "Ndiyavuma ukuba iVulindlela isebenzise ulwazi lwam ukuze isebenze i-akhawunti yam. (Kuyanyanzeleka)",
+    "consent_employer": "Ndiyavuma ukwabelana ngeprofayili yam nabaqeshi abaqinisekisiweyo. (Ngokuzithandela)",
+    "consent_alerts": "Ndiyavuma ukufumana izaziso zamathuba. (Ngokuzithandela)",
+    "accept_button": "Ndiyavuma",
+    "read_aloud": "Funda Ngokuvakalayo"
+  },
+  "shield": {
+    "title": "Ikhaka le-Vulindlela",
+    "scam_detector": "Isixhobo sokubona ubuqhophololo",
+    "detector_desc": "Ncamathisela uluhlu lwemisebenzi okanye umyalezo ngezantsi ukuze uhlole iimpawu eziyingozi.",
+    "check_button": "Hlola Uluhlu",
+    "analyzing": "Iyayihlalutya...",
+    "risk_safe": "Khuselekile",
+    "risk_warning": "Isilumkiso",
+    "risk_danger": "Ingozi"
+  },
+  "accessibility": {
+    "title": "Ukufikeleleka",
+    "personalize": "Yenza inkqubo ikufanele",
+    "question": "Ngaba ufuna ukuba le app isebenze ngendlela eyahlukileyo kuwe?",
+    "standard": "Eqhelekileyo",
+    "blind": "Ndingumntu ongaboniyo / andiboni kakuhle",
+    "deaf": "Andiva / andiva kakuhle",
+    "low_vision": "Andiboni kakuhle",
+    "motor": "Ndisisiphene emzimbeni",
+    "cognitive": "Ndisisiphene engqondweni",
+    "read_highlighter": "Isiqalelo sokufunda",
+    "gesture_nav": "Ukuhamba ngeempawu zezandla",
+    "sasl": "Utoliki we-SASL"
+  }
+}

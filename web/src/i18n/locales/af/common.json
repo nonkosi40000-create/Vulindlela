@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Tuis",
+    "jobs": "Geleenthede",
+    "guide": "AI Gids",
+    "shield": "Skild",
+    "profile": "Profiel"
+  },
+  "dashboard": {
+    "welcome": "Hallo, {{name}}",
+    "found_count": "Ons het {{count}} geleenthede vir jou gevind vandag.",
+    "recommended": "Aanbeveel vir jou",
+    "see_all": "Sien alles",
+    "bridge_title": "Oorbrug die gaping",
+    "search_placeholder": "Soek vaardighede of dorpe..."
+  },
+  "opp": {
+    "stipend": "Stipendium",
+    "taxi_fare": "Taxi-geld",
+    "high_transport": "Hoë vervoerkoste bespeur",
+    "verified": "Geverifieer",
+    "vouched": "Gewaarborg",
+    "unverified": "Ongewerifieer",
+    "apply": "Doen nou aansoek",
+    "applied": "Aansoek gedoen",
+    "fit_score": "Geleentheid-pasmaat-telling",
+    "why_match": "Hoekom dit by jou pas",
+    "near_miss": "Naby-mis Oorbrugging",
+    "flag_suspicious": "Rapporteer as verdag"
+  },
+  "popia": {
+    "title": "Jou Privaatheid, Jou Regte",
+    "intro": "Vulindlela is daartoe verbind om jou persoonlike inligting te beskerm. Ons volg die Wet op die Beskerming van Persoonlike Inligting (POPIA).",
+    "who_we_are": {
+      "title": "1. Wie ons is",
+      "content": "Vulindlela is die Verantwoordelike Party. Ons Inligtingsbeampte kan bereik word by privacy@vulindlela.org.za."
+    },
+    "what_we_collect": {
+      "title": "2. Wat ons versamel",
+      "content": "Ons versamel slegs wat ons nodig het: jou naam, selfoonnommer, dorp/area, vaardighede en taalvoorkeur. Ons vra nooit vir ID-nommers of bankbesonderhede nie."
+    },
+    "why_we_collect": {
+      "title": "3. Waarom ons dit versamel",
+      "content": "Om jou by geleenthede te pas, werkgewers te verifieer, en jou veilig te hou teen skelmstreke (scams)."
+    },
+    "who_sees_it": {
+      "title": "4. Wie sien jou data",
+      "content": "Werkgewers sien net wat jy kies om te deel. Ons verkoop nooit jou data nie."
+    },
+    "protection": {
+      "title": "5. Hoe ons dit beskerm",
+      "content": "Jou data is geënkripteer en veilig gestoor."
+    },
+    "rights": {
+      "title": "6. Jou Regte",
+      "content": "Jy kan jou data te eniger tyd sien, verander of uitvee. Jy kan ook 'n klag by die Inligtingsreguleerder indien."
+    },
+    "under_18": {
+      "title": "7. As jy onder 18 is",
+      "content": "Gebruikers tussen 15–17 het die toestemming van 'n ouer of voog nodig via OTP."
+    },
+    "camera": {
+      "title": "8. Kamera en Gebare",
+      "content": "As jy handgebare gebruik, word video slegs op jou toestel verwerk en nooit gestoor nie."
+    },
+    "consent_processing": "Ek stem in dat Vulindlela my inligting verwerk om my rekening te bestuur. (Vereis)",
+    "consent_employer": "Ek stem in om my profiel met geverifieerde werkgewers te deel. (Opsioneel)",
+    "consent_alerts": "Ek stem in om kennisgewings oor geleenthede te ontvang. (Opsioneel)",
+    "accept_button": "Ek Aanvaar",
+    "read_aloud": "Lees Hardop"
+  },
+  "shield": {
+    "title": "Vulindlela Skild",
+    "scam_detector": "Skermverklikker",
+    "detector_desc": "Plak 'n posbeskrywing of boodskap hieronder om vir gevaartekens te toets.",
+    "check_button": "Gaan Pos Na",
+    "analyzing": "Ontleed tans...",
+    "risk_safe": "Veilig",
+    "risk_warning": "Waarskuwing",
+    "risk_danger": "Gevaar"
+  },
+  "accessibility": {
+    "title": "Toeganklikheid",
+    "personalize": "Verpersoonlik jou ervaring",
+    "question": "Benodig jy dat die toepassing anders vir jou werk?",
+    "standard": "Standaard (geen gestremdheid)",
+    "blind": "Ek is blind / baie swak sig",
+    "deaf": "Ek is doof / hardhorend",
+    "low_vision": "Ek het swak sig",
+    "motor": "Ek het 'n motoriese gestremdheid",
+    "cognitive": "Ek het 'n kognitiewe gestremdheid",
+    "read_highlighter": "Lees-verligter",
+    "gesture_nav": "Handgebaar-navigasie",
+    "sasl": "SASL Tolk"
+  }
+}

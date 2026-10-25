@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Ikhaya",
+    "jobs": "Amathuba",
+    "guide": "Umhlahlandlela we-AI",
+    "shield": "Isihlangu",
+    "profile": "Iphrofayili"
+  },
+  "dashboard": {
+    "welcome": "Sawubona, {{name}}",
+    "found_count": "Sithole amathuba angu-{{count}} namuhla.",
+    "recommended": "Okunconywe wena",
+    "see_all": "Buka konke",
+    "bridge_title": "Vala igebe",
+    "search_placeholder": "Sesha amakhono noma amadolobha..."
+  },
+  "opp": {
+    "stipend": "Isibonelelo",
+    "taxi_fare": "Imali yetekisi",
+    "high_transport": "Kutholakale izindleko zokuhamba eziphezulu",
+    "verified": "Iqinisekisiwe",
+    "vouched": "Ivunyelwe",
+    "unverified": "Ayiqinisekisiwe",
+    "apply": "Faka isicelo manje",
+    "applied": "Usufakile",
+    "fit_score": "Amaphuzu okufaneleka",
+    "why_match": "Kungani lokhu kukufanele",
+    "near_miss": "Ibhuloho eliseduze",
+    "flag_suspicious": "Bika njengokusolisayo"
+  },
+  "popia": {
+    "title": "Ubumfihlo Bakho, Amalungelo Akho",
+    "intro": "IVulindlela izibophezele ekuvikeleni imininingwane yakho. Silandela uMthetho Wokuvikelwa Kwezinhlelo Zemininingwane (POPIA).",
+    "who_we_are": {
+      "title": "1. Singobani",
+      "content": "IVulindlela iyiNhlangano Enomthwalo. Isikhulu sethu semininingwane singatholakala ku-privacy@vulindlela.org.za."
+    },
+    "what_we_collect": {
+      "title": "2. Esikuqoqayo",
+      "content": "Siqoqa kuphela lokho esikudingayo: igama lakho, inombolo yomakhalekhukhwini, ilokishi/idolobha, amakhono, nolimi olukhethayo. Asikubuzi ngezinombolo ze-ID noma imininingwane yasebhange."
+    },
+    "why_we_collect": {
+      "title": "3. Kungani sikuqoqa",
+      "content": "Ukukuxhumanisa namathuba, ukuqinisekisa abaqashi, nokukugcina uphephile emikhubeni yokukhwabanisa (scams)."
+    },
+    "who_sees_it": {
+      "title": "4. Ubani obona imininingwane yakho",
+      "content": "Abaqashi babona kuphela lokho okhetha ukukwabelana nabo. Asilokothi sithengise imininingwane yakho."
+    },
+    "protection": {
+      "title": "5. Siyivikela kanjani",
+      "content": "Imininingwane yakho ifihliwe (encrypted) futhi igcinwe ngokuphepha."
+    },
+    "rights": {
+      "title": "6. Amalungelo Akho",
+      "content": "Ungabona, ushintshe, noma ususe imininingwane yakho noma nini. Ungakwazi futhi ukukhononda ku-Information Regulator."
+    },
+    "under_18": {
+      "title": "7. Uma ungaphansi kweminyaka engu-18",
+      "content": "Abasebenzisi abaneminyaka engu-15–17 badinga imvume yomzali noma umbheki nge-OTP."
+    },
+    "camera": {
+      "title": "8. Ikhamera Nokusetshenziswa Kwezandla",
+      "content": "Uma usebenzisa izimpawu zezandla (gestures), ividiyo icutshungulwa kudivayisi yakho kuphela futhi ayilokothi igcinwe."
+    },
+    "consent_processing": "Ngiyavuma ukuthi iVulindlela icubungule imininingwane yami ukuze isebenzise i-akhawunti yami. (Kudingekile)",
+    "consent_employer": "Ngiyavuma ukwabelana ngephrofayili yami nabaqashi abaqinisekisiwe. (Ngokuzithandela)",
+    "consent_alerts": "Ngiyavuma ukuthola izaziso zamathuba. (Ngokuzithandela)",
+    "accept_button": "Ngiyavuma",
+    "read_aloud": "Funda Ngokuzwakalayo"
+  },
+  "shield": {
+    "title": "Isihlangu se-Vulindlela",
+    "scam_detector": "Umtshina Wokukhwabanisa",
+    "detector_desc": "Namathisela uhlu lwemisebenzi noma umlayezo ngezansi ukuze uhlole izimpawu eziyingozi.",
+    "check_button": "Hlola Uhlu",
+    "analyzing": "Iyayihlaziya...",
+    "risk_safe": "Kuphephile",
+    "risk_warning": "Isexwayiso",
+    "risk_danger": "Ingozi"
+  },
+  "accessibility": {
+    "title": "Ukufinyeleleka",
+    "personalize": "Yenza uhlelo lokusebenza luhambisane nawe",
+    "question": "Ingabe udinga ukuthi uhlelo lokusebenza lusebenze ngendlela ehlukile kuwe?",
+    "standard": "Okujwayelekile",
+    "blind": "Ngiyimpumputhe / angiboni kahle",
+    "deaf": "Angizwa / angizwa kahle",
+    "low_vision": "Angiboni kahle",
+    "motor": "Ngikhubazekile ngokomzimba",
+    "cognitive": "Ngikhubazekile ngokomqondo",
+    "read_highlighter": "Isigqamisi Sokufunda",
+    "gesture_nav": "Ukuzulazula Ngezimpawu Zezandla",
+    "sasl": "Utolika we-SASL"
+  }
+}

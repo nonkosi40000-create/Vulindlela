@@ -1,0 +1,96 @@
+{
+  "nav": {
+    "home": "Hayani",
+    "jobs": "Mikana",
+    "guide": "Thunzhe ya AI",
+    "shield": "Tshivhoni",
+    "profile": "Phurofaele"
+  },
+  "dashboard": {
+    "welcome": "Ndi masiari, {{name}}",
+    "found_count": "Ro wana mikana ya {{count}} namusi.",
+    "recommended": "Zwine ra vha kumedzela",
+    "see_all": "Vhonani zwothe",
+    "bridge_title": "Valani gake",
+    "search_placeholder": "Todani vhutsila kana madzulo..."
+  },
+  "opp": {
+    "stipend": "Muholo",
+    "taxi_fare": "Tshelede ya thekhisi",
+    "high_transport": "Zwidodombedzwa zva vhuendi zwi a dura",
+    "verified": "Zwo khwathisedzwa",
+    "vouched": "Zwo tendelwa",
+    "unverified": "A zwo ngo khwathisedzwa",
+    "apply": "Nyelisani zwino",
+    "applied": "Zwo nyeliswa",
+    "fit_score": "Amaphuzu a u faneleka",
+    "why_match": "Ndi ngani izwi zwi tshi vha fanela",
+    "near_miss": "Vhurogo ha tsini",
+    "flag_suspicious": "Vhalani sa zwi timatimisaho"
+  },
+  "popia": {
+    "title": "Vhuifhinga hanu, Pfanelo dza khiine",
+    "intro": "Vulindlela i di-vhofha u tsireledza mafhungo anu. Ri tevhedza Mulayo wa u Tsireledza Mafhungo a muthu (POPIA).",
+    "who_we_are": {
+      "title": "1. Ri vho-nnyi",
+      "content": "Vulindlela ndi Mudzudzanyi a re na vhudifhinduleli. Mulangamadzulo wa mafhungo ashu a nga kwamiwa kha privacy@vulindlela.org.za."
+    },
+    "what_we_collect": {
+      "title": "2. Zwine ra zvi kuvhanganya",
+      "content": "Ri kuvhanganya fhedzi zwine ra zvi toda: dzina lanu, nomboro ya lutingo, fhethu hune na dzula, vhutsila, na luambo lune na lu takalela. A ri vhudzisi nomboro ya ID kana zwidodombedzwa zva bannga."
+    },
+    "why_we_collect": {
+      "title": "3. Ndi ngani ri tshi zvi kuvhanganya",
+      "content": "U itela u vha kwamanya na mikana, u khwathisedza vhaoli, na u vha tsireledza kha vhumbuluni (scams)."
+    },
+    "who_sees_it": {
+      "title": "4. Ndi vho-nnyi vhane vha vhona mafhungo anu",
+      "content": "Vhaoli vha vhona fhedzi zwine na khetha u zvi govhela navho. A ri pfuki ri tshi rengisa mafhungo anu."
+    },
+    "protection": {
+      "title": "5. Ri zvi tsireledza hani",
+      "content": "Mafhungo anu o tsireledzwa nga khoutu (encrypted) nahone o vhewa fhethu ho tsireledzeaho."
+    },
+    "rights": {
+      "title": "6. Pfanelo dza khiine",
+      "content": "Vha nga vhona, u shandula, kana u thutha mafhungo anu tshifhinga tshinwe na tshinwe. Vha nga dovha vha vhilaela kha Information Regulator."
+    },
+    "under_18": {
+      "title": "7. Arali vha re fhasi ha minwaha ya 18",
+      "content": "Vhashumisi vha re na minwaha ya 15–17 vha toda thendelo ya mubebi kana muingameli nga OTP."
+    },
+    "camera": {
+      "title": "8. Khamera na u shumisa zwanda",
+      "content": "Arali vha tshi shumisa zwanda (gestures), vidio i shumiwa kha tshishumiswa tshanu fhedzi nahone a i vheiwi."
+    },
+    "consent_processing": "Ndi a tenda uri Vulindlela i shumise mafhungo anga u itela u tshimbidza akhautu yanga. (Zwi a todea)",
+    "consent_employer": "Ndi a tenda u govhela phurofaele yanga na vhaoli vho khwathisedzwaho. (Nga u tou di-funa)",
+    "consent_alerts": "Ndi a tenda u tanganedza ndivhadzo dza mikana. (Nga u tou di-funa)",
+    "accept_button": "Ndi a tenda",
+    "read_aloud": "Vhala nga u pfala"
+  },
+  "shield": {
+    "title": "Tshivhoni tsha Vulindlela",
+    "scam_detector": "Tsireledzo ya vhumbuluni",
+    "detector_desc": "Nambathedzani vhudivhadzi ha mushumo afha u itela u lavhelesa zwiga zwa khombo.",
+    "check_button": "Sedzani Vhudivhadzi",
+    "analyzing": "I khou sengulusa...",
+    "risk_safe": "Ho tsireledzea",
+    "risk_warning": "Ndivhadzo",
+    "risk_danger": "Khombo"
+  },
+  "accessibility": {
+    "title": "U swikeleleka",
+    "personalize": "Dzhiani tshifhinga u dzhia zwa khiine",
+    "question": "Vha toda tshishumiswa tshi tshi shuma nga ndila yo fhambanaho?",
+    "standard": "Zwa misi",
+    "blind": "Ndi bofu / a ndi vhoni zwavhudi",
+    "deaf": "Ndi dzinga / a ndi pfi zwavhudi",
+    "low_vision": "A ndi vhoni zwavhudi",
+    "motor": "Ndi o khwathala muvhili",
+    "cognitive": "Ndi na vhuleme ha u guda",
+    "read_highlighter": "Tsigumbululi tsha u vhala",
+    "gesture_nav": "U tshimbila nga zwanda",
+    "sasl": "Tshiphaphaphu tsha SASL"
+  }
+}

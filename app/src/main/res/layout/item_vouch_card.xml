@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/slate_800"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_vouch_skill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Skill: Hardworking"
+            android:textColor="@color/brand_green"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_vouch_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Always on time and very helpful."
+            android:textColor="@color/brand_white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_vouch_giver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="- From: Mentor Name"
+            android:textColor="@color/white_transparent"
+            android:textSize="12sp"
+            android:fontStyle="italic" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

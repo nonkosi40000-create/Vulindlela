@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- VULINDLELA CORE PALETTE: GREEN, BLACK, WHITE -->
+    <color name="brand_green">#27AE60</color> <!-- Primary Green from logo -->
+    <color name="brand_green_dark">#1E8449</color>
+    <color name="brand_black">#000000</color> <!-- Deep Black -->
+    <color name="brand_white">#FFFFFF</color> <!-- Pure White -->
+
+    <!-- UI Mappings -->
+    <color name="primary">@color/brand_green</color>
+    <color name="background">@color/brand_black</color>
+    <color name="surface">#121212</color> <!-- Dark surface for contrast -->
+
+    <!-- Legacy / Semantic Mappings for existing layouts -->
+    <color name="teal_900">@color/brand_black</color>
+    <color name="teal_700">#1E8449</color>
+    <color name="teal_500">@color/brand_green</color>
+    <color name="slate_900">@color/brand_black</color>
+    <color name="slate_800">#1A1A1A</color>
+    <color name="sunrise_gold">#F1C40F</color> <!-- Gold for Vula accents -->
+    <color name="soft_coral">#E74C3C</color>
+    <color name="white">@color/brand_white</color>
+    <color name="white_transparent">#B3FFFFFF</color>
+
+    <!-- Logo Specific Colors -->
+    <color name="logo_path_brown">#8B5E3C</color>
+</resources>

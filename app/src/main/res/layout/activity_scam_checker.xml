@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_900">
+
+    <View
+        android:id="@+id/header_shield"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/slate_800"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/ic_shield"
+        app:tint="@color/soft_coral"
+        app:layout_constraintBottom_toBottomOf="@id/header_shield"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_shield" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="Shield Scam Detector"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/header_shield"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_shield" />
+
+    <TextView
+        android:id="@+id/tv_scam_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:text="Paste a job listing or WhatsApp message below. Vula will check for common scams like 'registration fees' or 'ID copy requests'."
+        android:textColor="@color/teal_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_shield" />
+
+    <EditText
+        android:id="@+id/et_scam_input"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="24dp"
+        android:background="@drawable/bg_input_rounded"
+        android:gravity="top"
+        android:hint="Paste message here..."
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white_transparent"
+        app:layout_constraintTop_toBottomOf="@id/tv_scam_desc" />
+
+    <Button
+        android:id="@+id/btn_check_scam"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/soft_coral"
+        android:text="CHECK FOR SCAMS"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:layout_constraintTop_toBottomOf="@id/et_scam_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
