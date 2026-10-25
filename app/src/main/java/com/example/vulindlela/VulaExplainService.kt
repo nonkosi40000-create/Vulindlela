@@ -2,8 +2,7 @@ package com.example.vulindlela
 
 /**
  * VulaExplainService
- * Grounded AI Logic for V1.
- * Provides Grade 6 explanations in 5 languages.
+ * Provides simplified Grade 6 explanations for key screens.
  */
 object VulaExplainService {
 
@@ -21,16 +20,24 @@ object VulaExplainService {
         "login_page" to mapOf(
             "en" to VulaExplanation(
                 "Sign In",
-                "Enter your mobile number to get a secure code via SMS.",
-                listOf("Enter SA mobile number", "Receive 6-digit code", "Verify and enter"),
+                "Simply enter your name to access your verified profile and job matches.",
+                listOf("Enter your full name", "Tap Sign In", "Continue your journey"),
                 "Get Started"
+            )
+        ),
+        "register_page" to mapOf(
+            "en" to VulaExplanation(
+                "Create Account",
+                "Join Vulindlela to build a verified Skill Passport instead of a CV.",
+                listOf("Enter your full name", "Tell Vula about your skills", "Get verified by your community"),
+                "Join Now"
             )
         ),
         "access_picker" to mapOf(
             "en" to VulaExplanation(
                 "Accessibility",
                 "Choose how you want to use the app based on your needs.",
-                listOf("Standard mode", "Blind mode", "Low vision mode", "Motor mode"),
+                listOf("Standard mode", "Blind mode (Voice first)", "Low vision mode", "Motor mode"),
                 "Continue"
             )
         ),
@@ -38,16 +45,8 @@ object VulaExplainService {
             "en" to VulaExplanation(
                 "Home Dashboard",
                 "This is your starting point for finding work safely.",
-                listOf("Check your today's summary", "See new job matches", "View safety alerts"),
+                listOf("See your daily summary", "Check for new job matches", "View important safety alerts"),
                 "Find Work"
-            )
-        ),
-        "why_phone" to mapOf(
-            "en" to VulaExplanation(
-                "Mobile Number",
-                "We use your number to keep your account safe without needing a password.",
-                listOf("We send a one-time code", "Only you can see your messages", "We never share your number"),
-                "I understand"
             )
         )
     )
@@ -57,7 +56,7 @@ object VulaExplainService {
         return entry?.get(lang) ?: entry?.get("en") ?: VulaExplanation(
             "Vula Guide",
             "I can explain any part of this screen to you in simple words.",
-            listOf("Tap any 'Explain' button", "Ask me a question by voice"),
+            listOf("Tap any 'Explain' button", "Ask me a question in the chat"),
             "Got it"
         )
     }

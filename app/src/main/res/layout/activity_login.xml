@@ -99,8 +99,8 @@
 
             <ImageView
                 android:id="@+id/img_login_hero"
-                android:layout_width="140dp"
-                android:layout_height="140dp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
                 android:layout_marginTop="24dp"
                 android:contentDescription="Vulindlela Logo"
                 android:src="@drawable/ic_logo_vulindlela" />
@@ -120,7 +120,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Opening the way to verified opportunities"
+                android:text="Secure access to your Skill Passport"
                 android:textColor="@color/white_transparent"
                 android:textSize="15sp"
                 android:textAlignment="center" />
@@ -130,192 +130,85 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp">
 
-                <!-- Phone Input State -->
-                <LinearLayout
-                    android:id="@+id/layout_phone_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility="visible">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="MOBILE NUMBER"
-                            android:textColor="@color/brand_white"
-                            android:textSize="12sp"
-                            android:letterSpacing="0.1"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/tv_why_phone"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:background="?attr/selectableItemBackground"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:text="Why we ask?"
-                            android:textColor="@color/brand_green"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <EditText
-                        android:id="@+id/et_mobile"
-                        android:layout_width="match_parent"
-                        android:layout_height="64dp"
-                        android:background="@drawable/bg_input_rounded"
-                        android:hint="072 123 4567"
-                        android:importantForAutofill="no"
-                        android:inputType="phone"
-                        android:paddingHorizontal="24dp"
-                        android:textColor="@color/brand_white"
-                        android:textColorHint="@color/white_transparent"
-                        android:textSize="17sp" />
-
-                    <Button
-                        android:id="@+id/btn_get_otp"
-                        android:layout_width="match_parent"
-                        android:layout_height="64dp"
-                        android:layout_marginTop="32dp"
-                        android:backgroundTint="@color/brand_green"
-                        android:text="GET SECURE CODE"
-                        android:textColor="@color/brand_white"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp" />
-                </LinearLayout>
-
-                <!-- OTP Input State -->
-                <LinearLayout
-                    android:id="@+id/layout_otp_input"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:visibility="gone">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="VERIFICATION CODE"
-                            android:textColor="@color/brand_white"
-                            android:textSize="12sp"
-                            android:letterSpacing="0.1"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/tv_why_otp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentEnd="true"
-                            android:background="?attr/selectableItemBackground"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:text="Why we ask?"
-                            android:textColor="@color/brand_green"
-                            android:textSize="11sp"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
-
-                    <EditText
-                        android:id="@+id/et_otp"
-                        android:layout_width="match_parent"
-                        android:layout_height="64dp"
-                        android:background="@drawable/bg_input_rounded"
-                        android:gravity="center"
-                        android:hint="• • • • • •"
-                        android:inputType="number"
-                        android:letterSpacing="0.6"
-                        android:maxLength="6"
-                        android:textColor="@color/brand_white"
-                        android:textColorHint="@color/white_transparent"
-                        android:textSize="22sp"
-                        android:importantForAutofill="no" />
-
-                    <TextView
-                        android:id="@+id/tv_resend_timer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="20dp"
-                        android:text="Resend code in 00:59"
-                        android:textColor="@color/brand_green"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-
-                    <Button
-                        android:id="@+id/btn_verify_otp"
-                        android:layout_width="match_parent"
-                        android:layout_height="64dp"
-                        android:layout_marginTop="32dp"
-                        android:backgroundTint="@color/brand_green"
-                        android:text="VERIFY AND SIGN IN"
-                        android:textColor="@color/brand_white"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        app:cornerRadius="12dp" />
-                </LinearLayout>
-
-                <!-- Name Input State (Register) -->
+                <!-- Login State -->
                 <LinearLayout
                     android:id="@+id/layout_name_input"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
-                    <RelativeLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="YOUR FULL NAME"
-                            android:textColor="@color/brand_white"
-                            android:textSize="12sp"
-                            android:letterSpacing="0.1"
-                            android:textStyle="bold" />
-                    </RelativeLayout>
+                        android:text="YOUR NAME"
+                        android:textColor="@color/brand_white"
+                        android:textSize="12sp"
+                        android:letterSpacing="0.1"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp"/>
 
                     <EditText
-                        android:id="@+id/et_full_name"
+                        android:id="@+id/et_login_name"
                         android:layout_width="match_parent"
-                        android:layout_height="64dp"
+                        android:layout_height="60dp"
                         android:background="@drawable/bg_input_rounded"
-                        android:hint="Sipho Mdluli"
+                        android:hint="Name"
                         android:importantForAutofill="no"
                         android:inputType="textPersonName"
-                        android:paddingHorizontal="24dp"
+                        android:paddingHorizontal="20dp"
                         android:textColor="@color/brand_white"
                         android:textColorHint="@color/white_transparent"
-                        android:textSize="17sp" />
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PASSWORD"
+                        android:textColor="@color/brand_white"
+                        android:textSize="12sp"
+                        android:letterSpacing="0.1"
+                        android:textStyle="bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <EditText
+                        android:id="@+id/et_login_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:background="@drawable/bg_input_rounded"
+                        android:hint="Password"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:paddingHorizontal="20dp"
+                        android:textColor="@color/brand_white"
+                        android:textColorHint="@color/white_transparent"
+                        android:textSize="16sp" />
 
                     <Button
-                        android:id="@+id/btn_save_name"
+                        android:id="@+id/btn_login"
                         android:layout_width="match_parent"
                         android:layout_height="64dp"
                         android:layout_marginTop="32dp"
                         android:backgroundTint="@color/brand_green"
-                        android:text="CONTINUE"
+                        android:text="SIGN IN"
                         android:textColor="@color/brand_white"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         app:cornerRadius="12dp" />
-                </LinearLayout>
 
+                    <TextView
+                        android:id="@+id/tv_go_to_register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="24dp"
+                        android:padding="8dp"
+                        android:text="New to Vulindlela? Create an account"
+                        android:textColor="@color/brand_green"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </FrameLayout>
 
         </LinearLayout>

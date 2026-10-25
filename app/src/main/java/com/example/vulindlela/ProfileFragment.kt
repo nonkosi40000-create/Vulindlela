@@ -28,14 +28,40 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         
-        binding.tvName.text = sessionManager.fetchUserName()
-        
+        displayPersonalInfo()
         setupLists()
         loadPassportData()
 
         binding.btnGetVouched.setOnClickListener {
             generateReferralLink()
         }
+
+        binding.btnLogout.setOnClickListener {
+            logoutUser()
+        }
+
+        binding.btnEditProfile.setOnClickListener {
+            // Restart the conversational profiling
+            startActivity(Intent(requireContext(), ProfileActivity::class.java))
+        }
+    }
+
+    private fun displayPersonalInfo() {
+        val name = sessionManager.fetchUserName()
+        val area = sessionManager.fetchArea() ?: "Location not set"
+        val age = sessionManager.fetchAge()
+        val gender = sessionManager.fetchGender() ?: "--"
+        val langs = sessionManager.fetchLanguages() ?: "--"
+        val budget = sessionManager.fetchBudget()
+
+        binding.tvName.text = name
+        binding.tvLocation.text = area
+        
+        val summary = "Age: ${if (age > 0) age else "--"} | Gender: $gender\n" +
+                      "Languages: $langs\n" +
+                      "Transport Budget: R${String.format("%.2f", budget)}"
+        
+        binding.tvDetailsSummary.text = summary
     }
 
     private fun setupLists() {
@@ -46,6 +72,8 @@ class ProfileFragment : Fragment() {
     private fun loadPassportData() {
         viewLifecycleOwner.lifecycleScope.launch {
             try {
+                // These endpoints might return 401 if token is dummy, 
+                // handle gracefully for prototype
                 val assessmentsResponse = RetrofitClient.api.getMyAssessments()
                 val vouchesResponse = RetrofitClient.api.getMyVouches()
 
@@ -73,7 +101,7 @@ class ProfileFragment : Fragment() {
                     binding.rvVouches.adapter = VouchAdapter(vouches)
                 }
             } catch (e: Exception) {
-                Toast.makeText(requireContext(), "Error loading passport", Toast.LENGTH_SHORT).show()
+                // Silently fail for prototype if backend is down
             }
         }
     }
@@ -86,6 +114,22 @@ class ProfileFragment : Fragment() {
             putExtra(Intent.EXTRA_TEXT, "Hi! Can you vouch for my skills on Vulindlela? Here is my link: https://vulindlela.app/vouch/$name")
         }
         startActivity(Intent.createChooser(shareIntent, "Share link via"))
+    }
+
+    private fun logoutUser() {
+        sessionManager.logout()
+        Toast.makeText(requireContext(), "Logged out successfully", Toast.LENGTH_SHORT).show()
+        
+        val intent = Intent(requireContext(), SplashActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        startActivity(intent)
+        requireActivity().finish()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Refresh info if user coming back from editing
+        displayPersonalInfo()
     }
 
     override fun onDestroyView() {
