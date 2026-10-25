@@ -11,19 +11,25 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.vulindlela.databinding.FragmentProfileBinding
 import com.example.vulindlela.network.RetrofitClient
+import com.example.vulindlela.network.SessionManager
 import kotlinx.coroutines.launch
 
 class ProfileFragment : Fragment() {
     private var _binding: FragmentProfileBinding? = null
     private val binding get() = _binding!!
+    private lateinit var sessionManager: SessionManager
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        sessionManager = SessionManager(requireContext())
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        
+        binding.tvName.text = sessionManager.fetchUserName()
+        
         setupLists()
         loadPassportData()
 
@@ -73,21 +79,13 @@ class ProfileFragment : Fragment() {
     }
 
     private fun generateReferralLink() {
-        // Requirement C: Unique referral links for mentors
-        lifecycleScope.launch {
-            try {
-                // This endpoint should be added to VulindlelaApi interface if not already there
-                // For now, we'll simulate the sharing intent
-                val shareIntent = Intent(Intent.ACTION_SEND).apply {
-                    type = "text/plain"
-                    putExtra(Intent.EXTRA_SUBJECT, "Vouch for my skills on Vulindlela")
-                    putExtra(Intent.EXTRA_TEXT, "Hi! Can you vouch for my skills on Vulindlela? Here is my link: https://vulindlela.app/vouch/sipho-mdluli")
-                }
-                startActivity(Intent.createChooser(shareIntent, "Share link via"))
-            } catch (e: Exception) {
-                Toast.makeText(requireContext(), "Failed to generate link", Toast.LENGTH_SHORT).show()
-            }
+        val name = sessionManager.fetchUserName()?.lowercase()?.replace(" ", "-") ?: "user"
+        val shareIntent = Intent(Intent.ACTION_SEND).apply {
+            type = "text/plain"
+            putExtra(Intent.EXTRA_SUBJECT, "Vouch for my skills on Vulindlela")
+            putExtra(Intent.EXTRA_TEXT, "Hi! Can you vouch for my skills on Vulindlela? Here is my link: https://vulindlela.app/vouch/$name")
         }
+        startActivity(Intent.createChooser(shareIntent, "Share link via"))
     }
 
     override fun onDestroyView() {
