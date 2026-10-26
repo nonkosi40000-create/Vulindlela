@@ -39,9 +39,53 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:text="Soweto, Gauteng"
+            android:text="Location not set"
             android:textColor="@color/white_transparent"
             android:textSize="14sp" />
+
+        <!-- Personal Details Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="@color/slate_800"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Details"
+                    android:textColor="@color/brand_white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_details_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Age: -- | Gender: --\nLanguages: --\nTransport Budget: R0.00"
+                    android:textColor="@color/white_transparent"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="4dp" />
+
+                <Button
+                    android:id="@+id/btn_edit_profile"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="EDIT DETAILS"
+                    android:textColor="@color/brand_green"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Proof-of-Skill Passport Section -->
         <TextView
@@ -74,6 +118,15 @@
                     android:text="Verified Skills"
                     android:textColor="@color/brand_white"
                     android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_readiness_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Verified Skills: 0 / 0"
+                    android:textColor="@color/white_transparent"
+                    android:textSize="12sp" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rv_verified_skills"
@@ -131,51 +184,17 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Readiness Badge -->
-        <com.google.android.material.card.MaterialCardView
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:cardBackgroundColor="@color/brand_green"
-            app:cardCornerRadius="16dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="16dp"
-                android:gravity="center_vertical">
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@android:drawable/btn_star_big_on"
-                    app:tint="@color/brand_white" />
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginStart="16dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Work-Ready Status"
-                        android:textColor="@color/brand_white"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/tv_readiness_level"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Developing (2/5 skills verified)"
-                        android:textColor="@color/brand_white"
-                        android:textSize="12sp" />
-                </LinearLayout>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+            android:layout_height="64dp"
+            android:layout_marginTop="32dp"
+            android:text="LOGOUT"
+            android:textColor="@color/soft_coral"
+            app:strokeColor="@color/soft_coral"
+            app:cornerRadius="12dp" />
 
         <View
             android:layout_width="match_parent"

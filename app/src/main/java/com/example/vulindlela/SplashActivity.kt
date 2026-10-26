@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.vulindlela.network.SessionManager
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,10 +14,17 @@ class SplashActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash)
 
-        // Bypassing login for the demo to show the "Me" tab
+        val sessionManager = SessionManager(this)
+
         Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, DashboardActivity::class.java))
+            if (sessionManager.fetchAuthToken() != null) {
+                // User is already logged in
+                startActivity(Intent(this, DashboardActivity::class.java))
+            } else {
+                // Start onboarding/login flow
+                startActivity(Intent(this, LanguagePickerActivity::class.java))
+            }
             finish()
-        }, 1500)
+        }, 2000)
     }
 }

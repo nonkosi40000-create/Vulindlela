@@ -4,7 +4,13 @@ data class OtpRequest(val mobile: String)
 data class VerifyOtpRequest(val mobile: String, val otp: String)
 data class MessageResponse(val message: String)
 data class LoginResponse(val accessToken: String, val user: UserInfo)
-data class UserInfo(val id: String, val mobile: String, val role: String, val isProfileComplete: Boolean)
+data class UserInfo(
+    val id: String, 
+    val mobile: String, 
+    val role: String, 
+    val isProfileComplete: Boolean,
+    val fullName: String?
+)
 
 data class ChatRequest(val message: String, val history: List<ChatHistoryItem>)
 data class ChatHistoryItem(val role: String, val parts: List<ChatPart>)
@@ -73,3 +79,5 @@ data class ScamCheckResponse(
 )
 
 data class ReportScamRequest(val text: String, val reason: String)
+
+data class UpdateProfileRequest(val fullName: String)

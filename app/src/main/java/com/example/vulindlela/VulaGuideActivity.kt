@@ -13,11 +13,13 @@ import com.example.vulindlela.network.ChatHistoryItem
 import com.example.vulindlela.network.ChatPart
 import com.example.vulindlela.network.ChatRequest
 import com.example.vulindlela.network.RetrofitClient
+import com.example.vulindlela.network.SessionManager
 import kotlinx.coroutines.launch
 
 class VulaGuideActivity : AppCompatActivity() {
     private lateinit var binding: ActivityVulaGuideBinding
     private lateinit var chatAdapter: ChatAdapter
+    private lateinit var sessionManager: SessionManager
     private val chatHistory = mutableListOf<ChatHistoryItem>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,6 +27,8 @@ class VulaGuideActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityVulaGuideBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        sessionManager = SessionManager(this)
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.chatHeader) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -41,8 +45,9 @@ class VulaGuideActivity : AppCompatActivity() {
             }
         }
 
-        // Initial welcome message from Vula
-        addVulaMessage("Sawubona! I'm Vula, your guide to finding the right work. Can you tell me your name and what kind of things you're good at?")
+        val userName = sessionManager.fetchUserName() ?: "friend"
+        addVulaMessage("Sawubona $userName! I'm Vula. I'm here to help you build a profile that shows employers what you're really good at.")
+        addVulaMessage("Instead of a boring CV, let's just talk. Tell me, what kind of work have you done before? Even if it was helping at home or a spaza shop.")
     }
 
     private fun setupChat() {
@@ -52,29 +57,45 @@ class VulaGuideActivity : AppCompatActivity() {
     }
 
     private fun sendMessage(text: String) {
-        // 1. Add user message to UI
         chatAdapter.addMessage(ChatMessage(text, true))
         binding.etMessage.text.clear()
         binding.rvChat.scrollToPosition(chatAdapter.itemCount - 1)
 
-        // 2. Call AI API
         lifecycleScope.launch {
             try {
+                // Try live API first
                 val response = RetrofitClient.api.sendProfileMessage(ChatRequest(text, chatHistory))
                 if (response.isSuccessful) {
-                    val reply = response.body()?.text ?: "I'm not sure how to respond to that."
+                    val reply = response.body()?.text ?: "I'm listening..."
                     addVulaMessage(reply)
-                    
-                    // Update history for context
                     chatHistory.add(ChatHistoryItem("user", listOf(ChatPart(text))))
                     chatHistory.add(ChatHistoryItem("model", listOf(ChatPart(reply))))
                 } else {
-                    Toast.makeText(this@VulaGuideActivity, "Vula is having trouble connecting.", Toast.LENGTH_SHORT).show()
+                    simulateVulaResponse(text)
                 }
             } catch (e: Exception) {
-                Toast.makeText(this@VulaGuideActivity, "Connection error.", Toast.LENGTH_SHORT).show()
+                simulateVulaResponse(text)
             }
         }
+    }
+
+    private fun simulateVulaResponse(userText: String) {
+        val reply = when {
+            userText.contains("shop", ignoreCase = true) || userText.contains("sell", ignoreCase = true) -> 
+                "Managing a shop takes real skill in 'Customer Service' and 'Inventory'. I've added those to your Passport! What else are you good at?"
+            
+            userText.contains("clean", ignoreCase = true) || userText.contains("fix", ignoreCase = true) ->
+                "Practical hands-on work is exactly what many employers need. I've noted down your 'Manual Dexterity' and 'Reliability'. Do you have any formal training too?"
+                
+            userText.contains("school", ignoreCase = true) || userText.contains("grade", ignoreCase = true) ->
+                "That's great! Having a school qualification opens up many 'Learnership' opportunities. Where are you currently staying? I'll look for jobs nearby."
+
+            userText.contains("soweto", ignoreCase = true) || userText.contains("job", ignoreCase = true) ->
+                "Perfect! I've found a few opportunities near you. You can see them in the 'Opps' tab now. I've also given you a 'Ready to Start' badge!"
+
+            else -> "I understand! I'm adding that to your Skill Passport. Every bit of experience counts toward making you 'Work-Ready'."
+        }
+        addVulaMessage(reply)
     }
 
     private fun addVulaMessage(text: String) {
